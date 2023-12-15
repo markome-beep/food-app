@@ -16,7 +16,10 @@ jobs:
         uses: jetli/trunk-action@v0.4.0
           
       - name: Build Trunk
-        run: trunk build --release
+        run: |
+          rustup target add wasm32-unknown-unknown
+          trunk build --release
+          
       
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
