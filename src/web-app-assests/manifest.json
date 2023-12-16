@@ -1,7 +1,7 @@
 {
   "name": "Food-app",
   "short_name": "Food-app",
-  "start_url": "/?home=true",
+  "start_url": "/food-app",
   "theme_color": "#317EFB",
   "icons": [
     {
