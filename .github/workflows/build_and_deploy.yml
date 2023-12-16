@@ -14,11 +14,15 @@ jobs:
         uses: actions/checkout@v2
       - name: trunk-action
         uses: jetli/trunk-action@v0.4.0
+        
+      - name: Setup Rust
+        run: |
+          rustup toolchain install nightly
+          rustup override set nightly
+          rustup target add wasm32-unknown-unknown
           
       - name: Build Trunk
-        run: |
-          rustup target add wasm32-unknown-unknown
-          trunk build --release
+        run: trunk build --release
           
       
       - name: Deploy to Github Pages
