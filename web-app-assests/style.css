@@ -1,0 +1,29 @@
+html body {
+	touch-action: none;
+}
+
+body {
+	background-color: #804C36;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.CookBook {
+	width: 80%;
+	aspect-ratio: 2/1;
+	height: inherit;
+	font-size: 3rem;
+	background-image: url("./img/leather.jpg");
+	transition-duration: 1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.opened {
+	width: 90%;
+	height: 90svh;
+	background-color: #F2EECB;
+	background-image: none;
+}
